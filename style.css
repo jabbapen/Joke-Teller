@@ -1,0 +1,65 @@
+/* laughing https://media.giphy.com/media/1BG0g317SLYFVmNWOa/giphy.gif */
+/*  */
+/* panda https://media.giphy.com/media/wlhRDSYPx3PXf49IR4/giphy.gif */
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #bf76da;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: left/40% no-repeat url(./panda.gif);
+}
+
+.drummer {
+	background: bottom/40% no-repeat url(./drummer.gif);
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+	width: 13rem;
+	height: 4rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.2rem;
+	color: white;
+	background: #c3da76;
+	border: none;
+	border-radius: 0.2rem;
+	box-shadow: 0.1rem 0.1rem 1rem 0.8rem rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	filter: brightness(95%);
+}
+
+button:active {
+	transform: scale(0.9);
+}
+
+button:disabled {
+	cursor: default;
+	filter: brightness(30%);
+}
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 967px) {
+	.container {
+		background-size: 40%;
+		background-position: top;
+	}
+
+	button {
+		box-shadow: 0.3rem 0.3rem 2rem 1rem rgba(228, 211, 211, 0.4);
+	}
+}
